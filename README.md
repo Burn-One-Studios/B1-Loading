@@ -1,6 +1,6 @@
 # B1 Loading Screen
 
-<div align="middle"> <img width="auto" src="https://raw.githubusercontent.com/Burn-One-Studios/.github/main/assets/B1Loading.PNG"/>
+<div align="middle"> <img width="auto" src="https://raw.githubusercontent.com/Burn-One-Studios/.github/main/assets/B1Loading.PNG"/> </div>
 
 Just a simple loading screen.
 
