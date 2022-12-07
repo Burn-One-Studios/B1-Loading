@@ -4,70 +4,61 @@ body {
     overflow: hidden;
 }
 
-.center-box {
-    z-index: 100;
-    position: fixed;
-    justify-content: center;
-    display: flex;
-    width: 100%;
+.project {
+    background-color: rgb(54, 54, 54);
+    width: 100vw;
     height: 100%;
-}
-
-.center {
-    width: 10px;
-    height: 100%;
-    background-color: transparent;
-}
-
-.logo {
-    z-index: 90;
-    position: absolute;
-    display: flex;
-    height: 100px;
-    width: 145px;
-    left: 46%;
-    top: 44%;
-}
-
-.circle {
-    z-index: 70;
-    position: absolute;
-    display: block;
-    width: 250px;
-    height: 250px;
-    /* this changes the color of the inner circle */
-    background-color: rgb(219, 63, 16);
-    /* this is the shadow under the circle */
-    box-shadow: 0 0 200px 100px rgba(0, 0, 0, 0.87);
-    left: 42.6%;
-    top: 36%;
-    border-radius: 100%;
-    border-style: solid;
-    border-width: 10px;
-    /* this is the outer circle color */
-    border-color: rgb(131, 47, 22);
-}
-
-/* this is the light dark overlay */
-.black {
-    z-index: 60;
-    position: absolute;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.61);
 }
 
 .container {
+    width: 100vw;
+    height: 100%;
+}
+
+
+.player {
+    background-color: rgb(243, 243, 243);
+    border: 3px solid rgb(219, 63, 16);
+    border-radius: 80px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-areas: 
+    "control title"
+    "control volume";
+    overflow: hidden;
+    max-width: 540px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.controlicon {
+    display: none;
+}
+
+.controlicon.is-active {
+    grid-area: control;
     display: block;
-    width: 100%;
+    width: 50px;
+    position: relative;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+.songname {
+    grid-area: title;
+}
+
+.volume {
+    grid-area: volume;
 }
 
 .video {
-    position: relative;
     width: 100%;
-    right: 0;
-    bottom: 0;
+    height: 100%;
+    pointer-events: none;
 }
 
 /* this is the full bar */

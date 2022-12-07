@@ -37,3 +37,12 @@ This project is licensed under the [GPLv3] License - see the LICENSE.md file for
 music pause function
 
 - [vulix-load](https://github.com/Psykopaten/vulix-load)
+
+base music credits from PixaBay
+
+Music by 
+
+- [qubesounds](https://pixabay.com/users/qubesounds-24397640/?utm_source=link-attribution)
+
+- [AlexGrohl](https://pixabay.com/users/alexgrohl-25289918/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=111448)
+
