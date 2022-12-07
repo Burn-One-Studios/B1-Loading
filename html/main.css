@@ -26,7 +26,7 @@ body {
     "control title"
     "control volume";
     overflow: hidden;
-    max-width: 540px;
+    max-width: max-content;
     position: absolute;
     bottom: 80px;
     left: 0;
@@ -43,16 +43,22 @@ body {
     display: block;
     width: 50px;
     position: relative;
+    top: 25%;
     padding: 0 20px 0 20px;
     cursor: pointer;
 }
 
 .songname {
     grid-area: title;
+    padding: 0 20px;
 }
 
-.volume {
+.volume-container {
     grid-area: volume;
+    width: 100%;
+    display: flex;
+    min-width: 200px;
+    padding-bottom: 10px;
 }
 
 .video {
