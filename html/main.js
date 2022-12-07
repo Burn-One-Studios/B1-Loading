@@ -29,3 +29,4 @@ window.addEventListener('message', function (e) {
     (handlers[e.data.eventName] || function () { })(e.data);
 });
 
+document.getElementById("something").textContent = 'new text';

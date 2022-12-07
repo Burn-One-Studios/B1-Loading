@@ -34,6 +34,10 @@ This project is licensed under the [GPLv3] License - see the LICENSE.md file for
 
 ## Acknowledgments
 
+icons from 
+
+- [SVGRepo](https://www.svgrepo.com/)
+
 music pause function
 
 - [vulix-load](https://github.com/Psykopaten/vulix-load)

@@ -2,6 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="project">
@@ -9,13 +10,22 @@
         <div class="loadbar"><div class="progressbar"></div></div>
         <div class="media-wrapper">
           <div class="player">
-            <span class="controlbtn">
-              <img class="controlicon is-active" src="assets/pics/play.svg" alt="play"></i>
-              <img class="controlicon" src="assets/pics/pause.svg" alt="pause">
-            </span>
-            <h2 class="songname">jump</h2>
-            <div class="volume-container">
-              <input type="range" min="0" max="100" class="slider" id="myRange">
+            <div class="functions">
+              <div class="controls-container">
+                <span class="back"><img src="assets/pics/forward.svg" alt="back"></span>
+                <span class="controlbtn">
+                  <img class="controlicon play is-active" id="play" src="assets/pics/play.svg" alt="play"></i>
+                  <img class="controlicon pause " id="pause" src="assets/pics/pause.svg" alt="pause">
+                </span>
+                <span class="forward"><img src="assets/pics/forward.svg" alt="forward"></span>
+              </div>
+              <div class="volume-container">
+                  <input type="range" min="0" max="100" class="slider" id="myRange">
+              </div>
+            </div>
+            <div class="meta-container">
+              <h2 class="songname">jump</h2>
+              <h2 class="songartist">jump</h2>
             </div>
           </div>
         </div>

@@ -4,6 +4,12 @@ body {
     overflow: hidden;
 }
 
+h2 {
+    font-family: Mulish, Arial;
+    padding: 0;
+    margin: 0;
+}
+
 .project {
     background-color: rgb(54, 54, 54);
     width: 100vw;
@@ -17,21 +23,48 @@ body {
 
 
 .player {
-    background-color: rgb(243, 243, 243);
-    border: 3px solid rgb(219, 63, 16);
-    border-radius: 80px;
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    grid-template-areas: 
-    "control title"
-    "control volume";
-    overflow: hidden;
-    max-width: max-content;
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     left: 0;
     right: 0;
-    margin: auto
+    margin: auto;
+    display: flex;
+    width: 520px;
+    background-color: rgb(187, 187, 187);
+    border: 3px solid rgb(219, 63, 16);
+    border-radius: 80px;
+    
+}
+
+.fuctions{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.controls-container {
+    display: flex;
+    height: auto;
+    flex-flow: row;
+    justify-content: center;
+    /* top | right | bottom | left */
+    margin:15px 10px 2px 10px;
+}
+
+.back {
+    width: 40px;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+.controlbtn {
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.forward{
+    width: 40px;
+    cursor: pointer;
 }
 
 .controlicon {
@@ -39,26 +72,30 @@ body {
 }
 
 .controlicon.is-active {
-    grid-area: control;
     display: block;
-    width: 50px;
-    position: relative;
-    top: 25%;
-    padding: 0 20px 0 20px;
-    cursor: pointer;
-}
-
-.songname {
-    grid-area: title;
-    padding: 0 20px;
+    width: 40px;
 }
 
 .volume-container {
-    grid-area: volume;
-    width: 100%;
-    display: flex;
-    min-width: 200px;
+    height: auto;
+    margin:0 20px;
+}
+
+.meta-container {
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.songname {
+    font-weight: 800;
+    font-size: 30px;
     padding-bottom: 10px;
+}
+
+.songartist {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .video {
