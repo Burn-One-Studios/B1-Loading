@@ -12,27 +12,27 @@
           <div class="player">
             <div class="functions">
               <div class="controls-container">
-                <span class="back"><img src="assets/pics/forward.svg" alt="back"></span>
-                <span class="controlbtn">
-                  <img class="controlicon play is-active" id="play" src="assets/pics/play.svg" alt="play"></i>
-                  <img class="controlicon pause " id="pause" src="assets/pics/pause.svg" alt="pause">
+                <span class="back" id="back"><img src="assets/pics/forward.svg" alt="back" onclick="backTrack()"></span>
+                <span class="controlbtn" id="playbtn" onclick="playPause()">
+                  <img class="controlicon play" id="play" src="assets/pics/play.svg" alt="play"></i>
                 </span>
-                <span class="forward"><img src="assets/pics/forward.svg" alt="forward"></span>
+                <span class="forward" id="forward"><img src="assets/pics/forward.svg" alt="forward" onclick="forwardTrack()"></span>
               </div>
               <div class="volume-container">
-                  <input type="range" min="0" max="100" class="slider" id="myRange">
+                  <input type="range" min="1" max="80" class="slider" id="myRange">
               </div>
             </div>
             <div class="meta-container">
-              <h2 class="songname">jump</h2>
-              <h2 class="songartist">jump</h2>
+              <h2 class="songname"></h2>
+              <h2 class="songartist"></h2>
             </div>
           </div>
         </div>
+        <audio id="music" src="assets/music/"></audio>
         <iframe src="https://www.youtube.com/embed/LwkaqM1C6ao?playlist=LwkaqM1C6ao&loop=1&autoplay=1&mute=1" class="video"></iframe>
+        <script src="main.js"></script>
       </div>
     </div>
-  <script src="main.js"></script>
   </body>
 </html>
 

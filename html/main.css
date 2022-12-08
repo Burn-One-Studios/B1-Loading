@@ -68,10 +68,6 @@ h2 {
 }
 
 .controlicon {
-    display: none;
-}
-
-.controlicon.is-active {
     display: block;
     width: 40px;
 }
