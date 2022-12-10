@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/pics/play.svg">
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300;1,800&display=swap" rel="stylesheet">
   </head>
@@ -12,23 +13,23 @@
           <div class="player">
             <div class="functions">
               <div class="controls-container">
-                <span class="back" id="back"><img src="assets/pics/forward.svg" alt="back" onclick="backTrack()"></span>
-                <span class="controlbtn" id="playbtn" onclick="playPause()">
-                  <img class="controlicon play" id="play" src="assets/pics/play.svg" alt="play"></i>
+                <span class="back" id="back"><img src="assets/pics/forward.svg" alt="back" ></span>
+                <span class="controlbtn" id="playbtn">
+                  <img class="controlicon" id="play" src="assets/pics/play.svg" alt="play"></i>
                 </span>
-                <span class="forward" id="forward"><img src="assets/pics/forward.svg" alt="forward" onclick="forwardTrack()"></span>
+                <span class="forward" id="forward"><img src="assets/pics/forward.svg" alt="forward"></span>
               </div>
               <div class="volume-container">
-                  <input type="range" min="1" max="80" class="slider" id="myRange">
+                  <input type="range" min="1" max="100" class="slider" id="myRange">
               </div>
             </div>
             <div class="meta-container">
-              <h2 class="songname"></h2>
-              <h2 class="songartist"></h2>
+              <h2 id="changesong" class="songname"></h2>
+              <h2 id="changeartist" class="songartist"></h2>
             </div>
           </div>
         </div>
-        <audio id="music" src="assets/music/"></audio>
+        <audio id="music"></audio>
         <iframe src="https://www.youtube.com/embed/LwkaqM1C6ao?playlist=LwkaqM1C6ao&loop=1&autoplay=1&mute=1" class="video"></iframe>
         <script src="main.js"></script>
       </div>
