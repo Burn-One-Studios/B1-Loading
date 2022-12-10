@@ -38,9 +38,9 @@ icons from
 
 - [SVGRepo](https://www.svgrepo.com/)
 
-music pause function
+music load function
 
-- [vulix-load](https://github.com/Psykopaten/vulix-load)
+- [Lokiro67](https://forum.cfx.re/t/solved-using-multiple-loading-music/10959/17)
 
 base music credits from PixaBay
 
